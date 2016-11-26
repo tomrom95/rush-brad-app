@@ -99,15 +99,8 @@ class RusheeFormViewController: UIViewController, UIImagePickerControllerDelegat
             json["numRatings"] = 0
         }
         
-        let loadingAlert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
-        
-        loadingAlert.view.tintColor = UIColor.black
-        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
-        loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        loadingIndicator.startAnimating();
-        
-        loadingAlert.view.addSubview(loadingIndicator)
+        let loadingAlert = self.createLoadingAlert()
+
         present(loadingAlert, animated: true, completion: nil)
         
         imageRef.put(data!, metadata: nil) { metadata, error in
@@ -125,6 +118,20 @@ class RusheeFormViewController: UIViewController, UIImagePickerControllerDelegat
                 })
             }
         }
+    }
+    
+    func createLoadingAlert(withMessage message:String? = nil) -> UIAlertController {
+        let loadingAlert = UIAlertController(title: nil, message: message ?? "Please wait...", preferredStyle: .alert)
+        
+        loadingAlert.view.tintColor = UIColor.black
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.startAnimating();
+        
+        loadingAlert.view.addSubview(loadingIndicator)
+        
+        return loadingAlert
     }
     
     func getKey() -> String {
@@ -211,6 +218,8 @@ class RusheeFormViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     func getExistingRushees() {
+        let loadingAlert = self.createLoadingAlert(withMessage: "Loading rushees...")
+        present(loadingAlert, animated: true, completion: nil)
         ref.observeSingleEvent(of: FIRDataEventType.value, with: { (snapshot: FIRDataSnapshot) in
             if !snapshot.exists() {
                 return
@@ -230,7 +239,9 @@ class RusheeFormViewController: UIViewController, UIImagePickerControllerDelegat
             self.rushees = newRushees
             let alert = UIAlertController(title: nil, message: "Existing rushees loaded", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.cancel, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            loadingAlert.dismiss(animated: true) {
+                self.present(alert, animated: true, completion: nil)
+            }
         })
     }
 
