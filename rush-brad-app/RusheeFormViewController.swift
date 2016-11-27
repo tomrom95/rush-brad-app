@@ -41,6 +41,8 @@ class RusheeFormViewController: UIViewController, UIImagePickerControllerDelegat
         self.cameraButton.addTarget(self, action: #selector(RusheeFormViewController.imageTapped(_:)), for: UIControlEvents.touchUpInside)
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Submit", style: UIBarButtonItemStyle.plain, target: self, action: #selector(RusheeFormViewController.submit(_:)))
+        UIApplication.shared.isStatusBarHidden = false
+        UIApplication.shared.statusBarStyle = .lightContent
         
         self.getExistingRushees()
     }

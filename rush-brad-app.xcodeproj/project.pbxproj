@@ -10,6 +10,7 @@
 		65231D621DE22C2600458D4B /* RusheeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65231D611DE22C2600458D4B /* RusheeFormViewController.swift */; };
 		65231D641DE242F500458D4B /* ios-camera-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65231D631DE242F500458D4B /* ios-camera-icon.jpg */; };
 		6527EDCA1DB58A4000B33385 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6527EDC91DB58A4000B33385 /* default.png */; };
+		655CBD2A1DEA50B500739F04 /* deer3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 655CBD291DEA50B500739F04 /* deer3.jpg */; };
 		6598EDB41DE9474500327747 /* deer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6598EDB31DE9474500327747 /* deer.jpg */; };
 		65F706811DB5542600A6F647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F706801DB5542600A6F647 /* AppDelegate.swift */; };
 		65F706831DB5542600A6F647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F706821DB5542600A6F647 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		65231D611DE22C2600458D4B /* RusheeFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RusheeFormViewController.swift; sourceTree = "<group>"; };
 		65231D631DE242F500458D4B /* ios-camera-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ios-camera-icon.jpg"; sourceTree = "<group>"; };
 		6527EDC91DB58A4000B33385 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		655CBD291DEA50B500739F04 /* deer3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deer3.jpg; sourceTree = "<group>"; };
 		6598EDB31DE9474500327747 /* deer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deer.jpg; sourceTree = "<group>"; };
 		65F7067D1DB5542600A6F647 /* rush-brad-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rush-brad-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F706801DB5542600A6F647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				6598EDB31DE9474500327747 /* deer.jpg */,
+				655CBD291DEA50B500739F04 /* deer3.jpg */,
 				65F706801DB5542600A6F647 /* AppDelegate.swift */,
 				65F706821DB5542600A6F647 /* ViewController.swift */,
 				65231D611DE22C2600458D4B /* RusheeFormViewController.swift */,
@@ -169,6 +172,7 @@
 				65F7068B1DB5542600A6F647 /* LaunchScreen.storyboard in Resources */,
 				65F706931DB554EC00A6F647 /* GoogleService-Info.plist in Resources */,
 				6598EDB41DE9474500327747 /* deer.jpg in Resources */,
+				655CBD2A1DEA50B500739F04 /* deer3.jpg in Resources */,
 				65F706881DB5542600A6F647 /* Assets.xcassets in Resources */,
 				65231D641DE242F500458D4B /* ios-camera-icon.jpg in Resources */,
 				65F706861DB5542600A6F647 /* Main.storyboard in Resources */,

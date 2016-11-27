@@ -28,10 +28,10 @@
                                     <constraint firstAttribute="height" constant="21" id="oXk-0S-gFP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deer.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ocb-MW-rBD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deer3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ocb-MW-rBD">
                                 <rect key="frame" x="112" y="364" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="BmP-1j-JZI"/>
@@ -39,7 +39,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.23137254901960785" green="0.094117647058823528" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ocb-MW-rBD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IyF-9u-mKY"/>
                             <constraint firstItem="Ocb-MW-rBD" firstAttribute="top" secondItem="YJk-6E-Oot" secondAttribute="bottom" constant="20" id="Ztd-K5-vse"/>
@@ -54,6 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="deer.jpg" width="264" height="264"/>
+        <image name="deer3.jpg" width="651" height="651"/>
     </resources>
 </document>
